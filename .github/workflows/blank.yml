@@ -1,9 +1,0 @@
- - name: Build and deploy Container App
-      uses: azure/container-apps-deploy-action@v1
-      with:
-        imageToDeploy: ${{ secrets.containerRegistryName }}.azurecr.io/testimage:latest
-        containerAppName: saworkssite
-        resourceGroup: fineractdev-rg
-        containerAppEnvironment: fineractdev-aca-env
-        targetPort: 80
-        ingress: external
